@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head class="roboto-regular ">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body class="roboto-regular ">
+    <nav class="nav navbar bg-dark">
+        <div class="container">
+            <a class="navbar-brand d-flex" href="#">
+                <i class="fa-solid fa-shop fa-2x" style="color: #b63e1f;margin-right: 10px;"></i>
+                <h3 style="color: white;" class="mt-2">E-Shop</h3>
+            </a>
+            <div class="d-flex" role="search">
+                <div class="input-group">
+                    <button id="category-dropdown" class="btn btn-outline-secondary dropdown-toggle" style="background-color: white; color: black;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        All Categories
+                    </button>
+                    <div id="category-menu" class="dropdown-menu"></div>
+                    <input id="search" type="text" class="form-control" placeholder="Search">
+                    <button class="btn btn-outline-secondary" type="button" style="background-color: #b63e1f; border: 0;" id="search-btn">
+                        <i class="fa-solid fa-magnifying-glass" style="color: white;"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="btn cart">
+                <button style="border: 0;background-color: transparent;"id="cart-btn"><i class="fa-solid fa-cart-shopping fa-2x" style="color: white;"></i></button>
+            </div>
+        </div>
+    </nav>
+    <div class="menu bg-dark" id="cartmenu">
+        <button style="border: 0;background-color: transparent;" id="close-cart-btn"><i class="fa-solid fa-xmark fa-x" style="color: gray"></i></button>
+        <div style="width: 100%;height: 1px;background-color: grey;margin-bottom: 10px"></div>
+        <div class="row" id="itemcart">
+        </div>
+    </div>    
+    <main class="container mt-3">
+        <div id="loading" class="vh-100 d-none justify-content-center align-items-center">
+            <h3>Loading...</h3>
+        </div>
+        <div id="error" class="vh-10 d-none justify-content-center align-items-center">
+            <div class="alert alert-danger"></div>
+        </div>
+        <div class="row" id="main-content">
+            <aside class="col-3" id="side-bar-categories">
+                <div class="list-group border shadow rounded-2">
+                    <h5 style="font-weight: bold;margin-left: 20px;">Categories:</h5>
+                    <ul class="list-group" style="list-style-type: none;margin-left: 30px;margin-bottom: 20px;" id="categories">
+                    </ul>
+                </div>
+            </aside>
+            <section class="col-9">
+                <div class="row" id="products">
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/js.js" type="module"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/ce5a8a70fd.js" crossorigin="anonymous"></script>
+</body>
+</html>

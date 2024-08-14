@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="nav navbar bg-dark">
+        <div class="container">
+            <a class="navbar-brand d-flex" href="#">
+                <i class="fa-solid fa-shop fa-2x" style="color: #b63e1f;margin-right: 10px;"></i>
+                <h3 style="color: white;" class="mt-2">E-Shop</h3>
+            </a>
+            <div class="btn cart">
+                <button style="border: 0;background-color: transparent;"id="cart-btn"><i class="fa-solid fa-cart-shopping fa-2x" style="color: white;"></i></button>
+            </div>
+        </div>
+    </nav>
+    <main class="container mt-3">
+        <div id="loading" class="vh-100 d-none justify-content-center align-items-center">
+            <h3>Loading...</h3>
+        </div>
+        <div id="error" class="vh-10 d-none justify-content-center align-items-center">
+            <div class="alert alert-danger"></div>
+        </div>
+        <div id="product-details">
+        </div>
+    </main>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/product.js" type="module"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/ce5a8a70fd.js" crossorigin="anonymous"></script>
+</body>
+</html>
